@@ -1,0 +1,164 @@
+@import "./scss/bootstrap";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgba(250, 233, 233, 0.884);
+  main{
+    flex: 1 0 auto;
+  }
+  
+    .footer-a{
+      text-decoration: none;
+    }
+  
+}
+.nav-link:hover{
+  border-bottom: 1px solid yellow;
+  color: yellow !important; 
+  transition: 1s !important; 
+}
+
+nav{
+  a{
+    button:hover{
+      color: white !important;
+    }
+  }
+}
+
+main{
+  .name{
+    font-size: 80px;
+  }
+  .name-lab{
+    background: url(./assects/images/lab.jpg) no-repeat center/cover fixed; 
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .name-lab::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  .colum{
+    z-index: 2;
+  }.project-btn:hover{
+       background-color: transparent;
+       border: 2px solid yellow;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+ main{
+  .name{
+    font-size: 40px;
+  }
+  .data{
+    display: block;
+  }
+  
+ }
+}
+
+// NAbbar and Home End ---------------------------------------------------------//
+
+// About-----------------------------------------------------------------------------------
+.text{
+   display: flex;
+   flex-direction: column !important;
+}
+.about{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  
+  }
+  .zoom-img{
+    transition: 2s;
+  }
+  .zoom-img:hover{
+    transform: scale(1.1);
+  }
+
+  .bar-1{
+     width: 95%;
+  }
+  .bar-2{
+     width: 90%;
+  }
+  .bar-3{
+     width: 86%;
+  }
+  .bar-4{
+     width: 75%;
+  }
+  .bar-5{
+     width: 80%;
+  }
+
+
+  // protfolio
+#protfolio{
+  .card-1:hover{
+    background-color: purple;
+    color: white;
+    border: 5px solid purple;
+    
+  }
+  .card-2:hover{
+    background-color: darkblue;
+    color: white;
+    border: 5px solid darkblue;
+    
+  }
+  .card-3:hover{
+    background-color: black;
+    color: white;
+    border: 5px solid yellow;
+    
+  }
+  .card-4:hover{
+    background-color: red;
+    color: white;
+    border: 5px solid red;
+    
+  }
+  .card-5:hover{
+    background-color: green;
+    color: white;
+    border: 5px solid green;
+    
+  }
+}
+  .bi-tv:hover{
+    color: gray !important;
+    transition: 1s;
+  
+  }
+  .msg{
+    border-left: 5px solid yellow;
+  }
+
+// contact
+
+
+.icon:hover{
+ background-color: yellow;
+ transition: 1s;
+ border: 2px solid blue !important;
+}
+
+
