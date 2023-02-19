@@ -44,11 +44,13 @@ export default function Home() {
   return (
     <>
       <div id='Home' className="container-fluid name-lab">
+       
         <div className="row">
           <div className="col text-white text-center colum">
-            <h1 className='name'>I'm Muhammad Ahmed</h1>
-            <h1>Frontend Developer</h1>
-            <a href='#Contact' className='btn btn-warning my-4 btn-lg p-3 text-white fs-5 fw-bold rounded-5 project-btn'>HAVE A PROJECT</a>
+            <h4 className='text-lg-start text-md-center mb-0 text-warning'>Hi, my name is </h4>
+            <h1 className='name'>Muhammad Ahmed</h1>
+            <h1>Frontend React Developer</h1>
+            <a href='#Contact' className='btn btn-warning my-4 btn-lg p-3 text-white  fs-5 fw-bold rounded-5 project-btn'>HAVE A PROJECT</a>
           </div>
         </div>
       </div>
@@ -68,14 +70,17 @@ export default function Home() {
       {/* /* ABout *------------------------------------------------------------------/ */}
 
       <section id='About'>
-        <div className="container card about bg-white about " >
+        <div className="container card rounded-5 about bg-white about " >
           <div className="row p-3 p-lg-5 g-0 ">
             <div className="col-lg-6 col-md-6 col-sm-12 data ">
+              <div className='image-center'>
               <img src={profile} alt="profile" className='image-fluid w-50 rounded-5 border border-warning border-3 zoom-img' />
+              </div>
+                
               <div className='p-4'>
                 <p className='text-start'><b><i className="bi bi-arrow-right-square-fill text-warning fs-5"></i> Name :</b> Muhammad Ahmed</p>
                 <p><b> <i className="bi bi-person-square text-warning fs-5"></i> Profile :</b> I am a Frontend React Developer</p>
-                <p><b><i className="bi bi-envelope-at text-warning fs-5"></i> Email :</b> <a href="https://mail.google.com/mail/u/1/#inbox" target='_blank'>muhammadahmedite@gmail.com</a></p>
+                <p><b><i className="bi bi-envelope-at text-warning fs-5"></i> Email :</b> <a href="mailto:muhammadahmedite@gmail.com" target='_blank'>muhammadahmedite@gmail.com</a></p>
                 <p><b> <i className="bi bi-telephone-outbound-fill text-warning fs-5"></i> Phone / WhatsApp :</b> <a href="tel:03190230242">+923190230242</a></p>
               </div>
             </div>
@@ -132,7 +137,7 @@ export default function Home() {
           <div className="row">
             <div className="col text-center">
               <h1 className='fw-bold'> 🎉 CERTIFICATION 🎉</h1>
-              <img src={certificate} alt="certifcate" className='zoom-img img-fluid w-50 mt-4  border border-5 border-light' />
+              <img src={certificate} alt="certifcate" className='zoom-img img-fluid w-50 mt-4 certifcate-img  border border-5 border-light' />
             </div>
           </div>
         </div>
@@ -235,7 +240,7 @@ export default function Home() {
           <h1 className='fs-1 fw-bolder'>CONTACT ME</h1>
           <p>If you have any query, please feel free to contact me.</p>
         </div>
-        <div className="container bg-light p-5">
+        <div className="container bg-light p-5 rounded-5">
 
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12 ">
@@ -250,7 +255,7 @@ export default function Home() {
                 <div className="mb-3">
                   <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Message' name='message' onChange={handleChange}></textarea>
                 </div>
-                <button className='btn btn-warning mt-3 btn-lg rounded-5'>Send Message</button>
+                <button className='btn btn-warning mt-3 btn-lg rounded-5 project-btn2 py-3'>Send Message</button>
               </form>
             </div>
 
@@ -267,7 +272,7 @@ export default function Home() {
                 <li className='mb-4 mb-lg-0'>
                   <a href="https://github.com/MuhammadAhmed-Developer" target='_blank' className='m-2'><i className="bi bi-github icon fs-2 border p-2 border-2 border-warning" style={{ borderRadius: 160 }}></i></a>
                 </li>
-                <li className='mb-4 mb-lg-0'> <a href="https://www.linkedin.com/in/muhammad-ahmed-359ab2263/" target='_blank' className='m-2'><i className="bi bi-linkedin icon fs-2 border p-2 border-2 border-warning" style={{ borderRadius: 160 }}></i></a></li>
+                <li className='mb-4 mb-lg-0'> <a href="https://www.linkedin.com/in/muhammad-ahmed-731234266/" target='_blank' className='m-2'><i className="bi bi-linkedin icon fs-2 border p-2 border-2 border-warning" style={{ borderRadius: 160 }}></i></a></li>
                 <li className='mb-4 mb-lg-0'>
                   <a href="https://www.youtube.com/channel/UCaLHw5befr8haWH_XQQVOvA" target='_blank' className='m-2'><i className="bi bi-youtube icon fs-2 border p-2 border-2 border-warning" style={{ borderRadius: 160 }}></i></a>
                 </li>

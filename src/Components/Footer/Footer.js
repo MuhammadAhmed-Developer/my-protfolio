@@ -7,8 +7,11 @@ export default function Footer() {
   return (
     <div className="container-fluid mt-5 bg-warning">
         <div className="row text-center">
-            <div className="col  p-2">
-                <a href="" className='text-white footer-a'>&copy; {year}, Muhammad Ahmed</a>
+            <div className="col-11  p-2">
+                <a href="#" className='text-dark footer-a'>&copy; {year}, All Right Reserved Muhammad Ahmed</a>
+            </div>
+            <div className="col-1  p-2">
+                <a href="#" className='text-dark footer-a'><i class="bi bi-arrow-up-circle-fill fs-5"></i></a>
             </div>
         </div>
     </div>

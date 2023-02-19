@@ -1,3 +1,4 @@
+$warning: rgba(102, 235, 240, 0.829);
 @import "./scss/bootstrap";
 
 *{
@@ -21,9 +22,11 @@
   
 }
 .nav-link:hover{
-  border-bottom: 1px solid yellow;
-  color: yellow !important; 
-  transition: 1s !important; 
+  // border-right: 3px solid $warning;
+  border-bottom: 3px solid $warning;
+  color: $warning !important;
+  // font-weight: bold; 
+  transition: 0.5s !important; 
 }
 
 nav{
@@ -40,7 +43,7 @@ main{
   }
   .name-lab{
     background: url(./assects/images/lab.jpg) no-repeat center/cover fixed; 
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +52,7 @@ main{
     content: "";
     position: absolute;
     width: 100%;
-    height: 90%;
+    height: 100%;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
@@ -58,9 +61,15 @@ main{
   .colum{
     z-index: 2;
   }.project-btn:hover{
+    color: white;
        background-color: transparent;
-       border: 2px solid yellow;
+       border: 2px solid $warning;
   }
+}
+.project-btn2:hover{
+  color: black;
+     background-color: transparent;
+     border: 2px solid $warning;
 }
 
 @media only screen and (max-width: 500px) {
@@ -71,7 +80,13 @@ main{
   .data{
     display: block;
   }
-  
+  .image-center{
+    display: flex;
+    justify-content: center;
+  }
+  .certifcate-img{
+    width: 80% !important;
+  }
  }
 }
 
@@ -87,7 +102,7 @@ main{
   
   }
   .zoom-img{
-    transition: 2s;
+    transition: 1s;
   }
   .zoom-img:hover{
     transform: scale(1.1);
@@ -112,36 +127,36 @@ main{
 
   // protfolio
 #protfolio{
-  .card-1:hover{
-    background-color: purple;
-    color: white;
-    border: 5px solid purple;
+  // .card-1:hover{
+  //   background-color: purple;
+  //   color: white;
+  //   border: 2px solid purple;
     
-  }
-  .card-2:hover{
-    background-color: darkblue;
-    color: white;
-    border: 5px solid darkblue;
+  // }
+  // .card-2:hover{
+  //   background-color: darkblue;
+  //   color: white;
+  //   border: 2px solid darkblue;
     
-  }
-  .card-3:hover{
-    background-color: black;
-    color: white;
-    border: 5px solid yellow;
+  // }
+  // .card-3:hover{
+  //   background-color: black;
+  //   color: white;
+  //   border: 2px solid $warning;
     
-  }
-  .card-4:hover{
-    background-color: red;
-    color: white;
-    border: 5px solid red;
+  // }
+  // .card-4:hover{
+  //   background-color: red;
+  //   color: white;
+  //   border: 2px solid red;
     
-  }
-  .card-5:hover{
-    background-color: green;
-    color: white;
-    border: 5px solid green;
+  // }
+  // .card-5:hover{
+  //   background-color: green;
+  //   color: white;
+  //   border: 2px solid green;
     
-  }
+  // }
 }
   .bi-tv:hover{
     color: gray !important;
@@ -149,16 +164,16 @@ main{
   
   }
   .msg{
-    border-left: 5px solid yellow;
+    border-left: 5px solid $warning;
   }
 
 // contact
 
 
 .icon:hover{
- background-color: yellow;
+ background-color: $warning;
  transition: 1s;
- border: 2px solid blue !important;
+ border: 2px solid white !important;
 }
 
 

@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
   
     // Navbar
-    <nav className="navbar navbar-expand-lg bg-info opacity-75 navbar-dark  fixed-top">
+    <nav className="navbar navbar-expand-lg bg-dark opacity-75 navbar-dark  fixed-top">
   <div className="container">
      
     <a className="navbar-brand" href="#"><button className='btn btn-outline-warning border border-warning border-2 rounded-5 fw-bold fs-4'>MA</button></a>
@@ -30,6 +30,7 @@ export default function Navbar() {
         <li className="nav-item ">
           <a className="nav-link active fs-5 me-3" href="#Contact">Contact</a>
         </li>
+        <a className="navbar-brand" href="https://drive.google.com/file/d/1EcKAiVbZqsZUUfPWmAZCzpiB5ZKJZdAo/view" target='_blank'><button className='btn btn-outline-warning border border-warning border-2 rounded-5 fw-bold fs-4 ms-4'>CV</button></a>
       </ul>
     </div>
   </div>
