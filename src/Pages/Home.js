@@ -220,9 +220,9 @@ export default function Home() {
                   <h5 className="card-title fw-bold text-start col-12">TODO APP</h5>
                   <div className='row'>
 
-                    <p className="card-text text-start col-5">A website build on HTML5, CSS3, Bootstrap5 and JavaScript
+                    <p className="card-text text-start col-7">A website build on HTML5, CSS3, Bootstrap5,  JavaScript and React js
                     </p>
-                    <a href="http://ahtodo.surge.sh/" target='_blank' className="text-end col-7"><i className="bi bi-tv text-warning mx-5" style={{ fontSize: 50 }}></i></a>
+                    <a href="https://my-todo-app-00.web.app/" target='_blank' className="text-end col-5"><i className="bi bi-tv text-warning mx-5" style={{ fontSize: 50 }}></i></a>
                   </div>
                 </div>
               </div>
